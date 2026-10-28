@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Développeur en recherche d'alternance</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="langues.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="wrap nav-inner">
+            <b>Swann Savary</b>
+            <a href="#projets" data-i18n="nav_projects">Projets</a>
+            <a href="#parcours" data-i18n="nav_parcours">Parcours</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+            <div class="lang">
+                <button type="button" id="theme-toggle" class="theme-btn" aria-label="Changer de thème">🌙</button>
+                <button type="button" data-lang="fr">FR</button>
+                <button type="button" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap">
+
+    <header class="hero">
+        <h1 data-i18n="hero_title">Étudiant en développement web</h1>
+        <p data-i18n="hero_text">Je conçois des applications web simples et utiles, du design de l'interface jusqu'à la base de données. Je cherche une équipe où apprendre le métier en contribuant dès le premier mois.</p>
+        <a class="btn p" href="#contact" data-i18n="btn_contact">Me contacter</a>
+        <a class="btn s" href="#projets" data-i18n="btn_projects">Voir mes projets</a>
+    </header>
+
+    <section>
+        <h2 data-i18n="skills_title">Compétences</h2>
+
+        <h3 class="sub" data-i18n="skills_langs">Langages</h3>
+        <ul class="skills">
+            <li>Go</li>
+            <li>Python</li>
+            <li>HTML / CSS</li>
+            <li>C++</li>
+            <li>SQLite</li>
+        </ul>
+
+        <h3 class="sub" data-i18n="skills_tools">Outils</h3>
+        <ul class="skills">
+            <li>Git / GitHub</li>
+            <li>Docker</li>
+        </ul>
+
+        <h3 class="sub" data-i18n="skills_soft">Soft skills</h3>
+        <ul class="skills">
+            <li data-i18n="soft1">Esprit d'équipe</li>
+            <li data-i18n="soft2">Autonomie</li>
+            <li data-i18n="soft3">Curiosité</li>
+            <li data-i18n="soft4">Résolution de problèmes</li>
+        </ul>
+    </section>
+
+    <section id="projets">
+        <h2 data-i18n="projects_title">Projets</h2>
+
+        <article class="proj">
+    <h3 data-i18n="p1_title">Guess It 1, prédire le prochain nombre</h3>
+    <p class="stack">Go, statistiques</p>
+    <dl>
+        <dt data-i18n="lbl_context">Contexte</dt>
+        <dd data-i18n="p1_context">Projet Zone01 : prédire une plage pour le prochain nombre d'une série.</dd>
+        <dt data-i18n="lbl_role">Mon rôle</dt>
+        <dd data-i18n="p1_role">Projet réalisé seul : algorithme et programme complet.</dd>
+        <dt data-i18n="lbl_result">Résultat</dt>
+        <dd data-i18n="p1_result">80 à 90 % de réussite sur les jeux de données de test, devant les algorithmes de référence (moyenne, médiane, grande plage).</dd>
+        <dt data-i18n="lbl_links">Liens</dt>
+        <dd><a href="https://github.com/swannsavary/Zone01-Guess-It-1" data-i18n="lnk_code">code sur GitHub</a></dd>
+    </dl>
+    <details class="more">
+        <summary data-i18n="lbl_more">Voir le détail</summary>
+        <div class="more-body">
+            <h4 data-i18n="h_problem">Le problème</h4>
+            <p data-i18n="p1_problem">Le programme reçoit des nombres un par un et doit donner une plage pour le suivant. Plus la plage est petite, plus le score est élevé, mais une plage trop petite rate le nombre : il faut trouver le bon compromis.</p>
+            <h4 data-i18n="h_choices">Choix techniques</h4>
+            <p data-i18n="p1_choices">Je calcule la médiane de tous les nombres déjà vus, puis le MAD (écart absolu médian) pour fixer la largeur de la plage. Ces deux mesures résistent aux valeurs extrêmes, contrairement à la moyenne.</p>
+            <h4 data-i18n="h_learned">Ce que j'ai appris</h4>
+            <p data-i18n="p1_learned">Statistiques appliquées, performance (plus de 10 000 nombres traités) et comparaison de mon algorithme à d'autres lors de l'audit.</p>
+        </div>
+    </details>
+</article>
+
+<article class="proj">
+    <h3 data-i18n="p2_title">EditorFilter, mod Geometry Dash</h3>
+    <p class="stack">C++, Geode</p>
+    <dl>
+        <dt data-i18n="lbl_context">Contexte</dt>
+        <dd data-i18n="p2_context">Projet personnel : un mod pour l'éditeur de niveaux de Geometry Dash.</dd>
+        <dt data-i18n="lbl_role">Mon rôle</dt>
+        <dd data-i18n="p2_role">Idée, conception des fonctionnalités, tests. Code réalisé avec une IA (vibe coding).</dd>
+        <dt data-i18n="lbl_result">Résultat</dt>
+        <dd data-i18n="p2_result">Mod fonctionnel : sélection par familles d'objets et mode avancé. Finitions en cours.</dd>
+        <dt data-i18n="lbl_links">Liens</dt>
+        <dd><a href="https://github.com/swannsavary/EditorFilter" data-i18n="lnk_code">code sur GitHub</a></dd>
+    </dl>
+    <details class="more">
+        <summary data-i18n="lbl_more">Voir le détail</summary>
+        <div class="more-body">
+            <h4 data-i18n="h_problem">Le problème</h4>
+            <p data-i18n="p2_problem">Dans l'éditeur, il est difficile de sélectionner précisément ce qu'on veut. Le mod permet de décocher des familles d'objets, ou de choisir directement un objet avec l'option avancée.</p>
+            <h4 data-i18n="h_choices">Choix techniques</h4>
+            <p data-i18n="p2_choices">J'ai d'abord essayé seul, avec un peu d'aide d'une IA, mais le C++ et les fonctions existantes du jeu rendaient la tâche trop longue. J'ai alors choisi de continuer en vibe coding.</p>
+            <h4 data-i18n="h_learned">Ce que j'ai appris</h4>
+            <p data-i18n="p2_learned">Le fonctionnement d'un mod, la lecture de code C++ et la conduite d'un projet avec une IA. Je continue à apprendre le C++ pour comprendre et modifier le code moi-même.</p>
+        </div>
+    </details>
+</article>
+
+<article class="proj">
+    <h3 data-i18n="p3_title">Forum (en développement)</h3>
+    <p class="stack">Go, SQLite, Docker</p>
+    <dl>
+        <dt data-i18n="lbl_context">Contexte</dt>
+        <dd data-i18n="p3_context">Projet Zone01 en équipe : un forum web avec comptes, posts, commentaires, likes et filtres.</dd>
+        <dt data-i18n="lbl_role">Mon rôle</dt>
+        <dd data-i18n="p3_role">Conception de la base de données (schéma, tables, relations).</dd>
+        <dt data-i18n="lbl_result">Résultat</dt>
+        <dd data-i18n="p3_result">Projet en cours de développement.</dd>
+        <dt data-i18n="lbl_links">Liens</dt>
+        <dd><a href="#" data-i18n="lnk_code">code sur GitHub</a></dd>
+    </dl>
+    <details class="more">
+        <summary data-i18n="lbl_more">Voir le détail</summary>
+        <div class="more-body">
+            <h4 data-i18n="h_problem">Le problème</h4>
+            <p data-i18n="p3_problem">Permettre aux utilisateurs de communiquer, de classer les posts par catégories, de les liker et de les filtrer.</p>
+            <h4 data-i18n="h_choices">Choix techniques</h4>
+            <p data-i18n="p3_choices">Go et SQLite, sans framework fr   ont. L'équipe a simplifié mon premier schéma de base de données pour rester adaptée à la taille du projet.</p>
+            <h4 data-i18n="h_learned">Ce que j'ai appris</h4>
+            <p data-i18n="p3_learned">Modélisation d'une base de données et travail en équipe sur un projet commun.</p>
+        </div>
+    </details>
+</article>
+<p class="more-link">
+    <a href="https://github.com/swannsavary" target="_blank" rel="noopener" data-i18n="more_projects">Voir plus de projets sur GitHub →</a>
+</p>
+    </section>
+
+    <section id="parcours">
+        <h2 data-i18n="parcours_title">Parcours</h2>
+
+        <h3 class="sub" data-i18n="tl_current">En cours</h3>
+        <ul class="tl">
+            <li><b data-i18n="tl1_title">Recherche d'une alternance</b><br><span data-i18n="tl1_text">Je cherche une alternance de 2 ans en développement logiciel.</span></li>
+            <li><b data-i18n="tl2_title">Formation à Zone01</b><br><span data-i18n="tl2_text">Formation en développement logiciel, basée sur des projets pratiques.</span></li>
+        </ul>
+        <h3 class="sub" data-i18n="tl_done">Terminé</h3>
+        <ul class="tl">
+            <li><b data-i18n="tl3_title">2025, Baccalauréat général</b><br>
+                <span data-i18n="tl3_text">Spécialités mathématiques et NSI.</span><br>
+                <span data-i18n="tl3_option">Options math experte et Grec.</span></li>
+        </ul>
+
+        <p data-i18n="langues">Langues : français (natif), anglais (B1), espagnol (scolaire).</p>
+        <p data-i18n="centres_de_interet">Centres d'intérêt : jeux video, jeux video de rythme: Geometry Dash, osu! ; manga, musique.</p>
+    </section>
+
+    <section id="contact">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <a class="btn p" href="mailto:swann.savary@gmail.com">swann.savary@gmail.com</a>
+        <a class="btn s" href="https://www.linkedin.com/in/swann-savary-49bb0b439">LinkedIn</a>
+        <a class="btn s" href="https://github.com/swannsavary">GitHub</a>
+        <a class="btn s" href="CV-Swann-Savary.pdf" target="_blank" data-i18n="btn_cv" id="lien-cv">Mon CV</a>
+    </section>
+
+    </div>
+
+    <footer>
+        <div class="wrap">© Swann Savary</div>
+    </footer>
+</body>
+</html>
